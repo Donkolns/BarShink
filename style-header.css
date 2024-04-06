@@ -1,0 +1,27 @@
+/* шапка */
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: baseline;
+    background: linear-gradient(rgb(0, 0, 0), #0DB295);
+}
+.naw-header{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.naw-header h1{
+   color: aliceblue;
+    
+}
+.naw-header a{
+    color: aliceblue;
+     text-decoration: none;
+ }
+.naw-menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}

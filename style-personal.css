@@ -1,0 +1,116 @@
+.img-user{
+    width: 150px;
+    height: 150px;
+}
+main{
+    width: 100%;
+    display: flex;
+    height: 101vh;
+    align-items: center;
+}
+.form-user-info{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 25vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.blok-main{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.text-personal-account{
+    text-align: center;
+}
+.edit{
+    width: 50%;
+    padding: 10px;
+    background-color: #969696;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit:hover {
+    background-color: #0DB295;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* стили для таблицы заказов */
+.order-history {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.order{
+   text-align: center; 
+}
+.img-writing{
+    height: 5vh;
+    width: 5vh;
+}
+/* footer */
+footer{
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), #0DB295);
+}
+.connection{
+    color: aliceblue;
+    /* width: 40%; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
+.images-connection{
+    display: flex;
+    align-items: center;
+}
+
+.icon-whatsapp{
+    width: 35px;
+    height: 35px;
+}
+.copirater{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.clock-work{
+    display: flex;
+    flex-direction: column;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
