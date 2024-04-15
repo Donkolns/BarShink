@@ -9,12 +9,12 @@ $result = mysqli_query($con, "SELECT * FROM Users WHERE `Email` = '$email' and `
 $user = mysqli_fetch_array($result);
 
 $user_id = $user["User_id"];
-if (!empty($user_id)) {
-    if ($querryUser['role'] == 'user') {
+if (isset($user_id)) {
+    if ($user['role'] == 'user') {
         setcookie('User_id', $user_id, time() + 3600, "/");
-        header('Location: personal-cab.php');
+        header('Location: User/personal-cab.php');
     } else {
-        header('Location: admin/Panel-admin1.php');
+        header('Location:admin\product.php');
     }
 }
 else {

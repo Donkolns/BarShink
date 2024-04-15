@@ -13,106 +13,40 @@ include "header.php";
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
-<body >
+<body>
 <main>
-    <div class="catalog">
-            <h2>Каталог</h2>
-            <div class="category">
-                <button class="button-category">Соки</button>
-                <button class="button-category">Кофе</button>
-                <button class="button-category">Газированные напитки</button>
-                <button class="button-category">Молочные напитки</button>
-                <button class="button-category">Вода</button>
-                <button class="button-category">Детские напитки</button>
-            </div>
-            <div class="bloc-drinks">
-                
-                <div class="drink">
-                    <div class="tovar">
-                        <img src="" alt="">
-                        <div class='info_tovar'>
-                            <h4>Латте</h3>
-                                <h4>180р</h4>
-                        </div>
-                        <div class="calc">
-                            <button class=" button-tovar">-</button>
-                            <h3>0</h3>
-                            <button class=" button-tovar">+</button>
-                        </div>
-                        <button class=" button-tovar1">Добавить в корзину</button>
-                    </div>
-                    <div class="tovar">
-                        <img src="" alt="">
-                        <div class='info_tovar'>
-                            <h4>Латте</h3>
-                                <h4>180р</h4>
-                        </div>
-                        <div class="calc">
-                            <button class=" button-tovar">-</button>
-                            <h3>0</h3>
-                            <button class=" button-tovar">+</button>
-                        </div>
-                        <button class=" button-tovar1">Добавить в корзину</button>
-                    </div>
-                    <div class="tovar">
-                        <img src="" alt="">
-                        <div class='info_tovar'>
-                            <h4>Латте</h3>
-                                <h4>180р</h4>
-                        </div>
-                        <div class="calc">
-                            <button class=" button-tovar">-</button>
-                            <h3>0</h3>
-                            <button class=" button-tovar">+</button>
-                        </div>
-                        <button class=" button-tovar1">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-            <button class="podrobnee">Подробнее</button>
-    </div>
-<!-- часть с текстом -->
 <div class="description">
     <div class="text-discription">
         <h3>Закажите напитки к себе домой</h3>
         <p >Наша компания предлагает широкий ассортимент напитков для тех, кто всегда в движении и ценит качество и удобство.</p>
         <p> У нас вы найдете прохладные газированные напитки, натуральные соки, чай и кофе, а также молочные продукты и спортивные напитки.</p>
+        <button  class="but_buy" href="#">Заказать</button>
     </div>
     <div class="bloc-img-description">
-        <img src="images\Group 8192.png" alt="" class="logo">
+        <img src="images\Group 8192.png" alt="" class="logo" height="500px" wight="500px">
         <img src="images\Group 8195.png" alt="" class="img-description">
     </div>
 </div>
-
-<div class="reviews">
+    <div class="reviews">
     <h2 class="text-reviews">Отзывы</h2>
-    <div class="slider">
-    <div class="slide">
-        <div class="otzv">
-            <img class= "user-img" src="images\free-icon-boy-4537069.png" alt="">
+    <div class="cards">
+        <div class ="card">
+            <img class="img_foto" src="images\free-icon-boy-4537069.png" height="100px" wight="100px" alt="">
             <p>Отличный кофе! Очень ароматный и насыщенный вкус. Упаковка красивая и удобная. Я очень доволен покупкой и 
             с удовольствием буду заказывать этот кофе снова. Рекомендую всем любителям кофе!</p>
         </div>
-        <div class="otzv">
-            <img class= "user-img" src="images\free-icon-boy-4537069.png" alt="">
+        <div class ="card">
+            <img class="img_foto" src="images\free-icon-boy-4537069.png" height="200px" wight="200px" alt="">
             <p>Отличный кофе! Очень ароматный и насыщенный вкус. Упаковка красивая и удобная. Я очень доволен покупкой и 
             с удовольствием буду заказывать этот кофе снова. Рекомендую всем любителям кофе!</p>
         </div>
-    </div>
-    <div class="slide">
-    <div class="otzv">
-            <img class= "user-img" src="images\free-icon-boy-4537069.png" alt="">
-            <p>Очень ароматный и насыщенный вкус. Упаковка красивая и удобная. Я очень доволен покупкой и 
-            с удовольствием буду заказывать этот кофе снова. Рекомендую всем любителям кофе!</p>
-        </div>
-        <div class="otzv">
-            <img class= "user-img" src="images\free-icon-boy-4537069.png" alt="">
+        <div class ="card">
+            <img class="img_foto" src="images\free-icon-boy-4537069.png" height="200px" wight="200px" alt="">
             <p>Отличный кофе! Очень ароматный и насыщенный вкус. Упаковка красивая и удобная. Я очень доволен покупкой и 
             с удовольствием буду заказывать этот кофе снова. Рекомендую всем любителям кофе!</p>
         </div>
     </div>
     </div>
-
 </div>
 
 </main>

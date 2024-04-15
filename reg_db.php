@@ -18,6 +18,6 @@ if(!empty($user)) {
 
     $_SESSION["user_id"] = mysqli_insert_id($con);
 
-    header('Location: personal-cab.php');
+    header('Location: User/personal-cab.php');
 }
 ?>

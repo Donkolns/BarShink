@@ -4,6 +4,9 @@
 }
 .container{
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* шапка */
@@ -12,7 +15,8 @@ header{
     height: 200px;
     display: flex;
     justify-content: baseline;
-    background: linear-gradient(rgb(0, 0, 0), #0DB295);
+    
+    background: linear-gradient(#0DB295 , rgb(0, 0, 0));
 }
 .naw-header{
     display: flex;
@@ -25,7 +29,14 @@ header{
     
 }
 .naw-header a{
-    color: aliceblue;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+     text-decoration: none;
+     transition: 1s;
+ }
+ .naw-header a:hover{
+     transition: 1s;
+     color:white;
      text-decoration: none;
  }
 .naw-menu{
@@ -33,85 +44,11 @@ header{
     width: 50%;
     justify-content: space-between;
 }
-/* каталог */
-.catalog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 800px;
-    justify-content: center;
-
-}
-.category{
-    display: flex;
-    text-align: center;
-    width: 50%;
-    justify-content: space-evenly;
-}
-.button-category{
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-.button-category:hover{
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    background-color:  #0DB295;
-}
-.logo{
-    position: relative;
-}
-.tovar img{
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
-}
-.drink{
-    display: flex;
-    width: 80%;
-    justify-content: space-evenly;
-}
-.bloc-drinks{
-    display: flex;
-    width: 100%;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-}
-.button-tovar1{
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-.button-tovar1:hover{
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    background-color:  #0DB295;
-}
-.podrobnee{
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
-
-}
-.podrobnee:hover{
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    background-color:  #0DB295;
-}
-
 /* часть с текстом */
 .description{
     background-color:black;
     width: 100%;
-    height: 400px;
+    height: 900px;
     display: flex;
     justify-content: space-between;
 }
@@ -158,6 +95,7 @@ header{
     align-items: center;
 }
 .text-discription p{
+    font-size: 25px;
     width: 39%;
     display: flex;
     flex-direction: column;
@@ -279,9 +217,6 @@ input {
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover {
-    background-color: #0DB295;
-}
 .drink p{
     font-weight: 500;
 }
@@ -308,36 +243,38 @@ a:hover {
     justify-content: space-evenly;
 }
 .reviews{
+    background-color: black;
     text-align: center;
     width: 100%;
     display: flex;
     height: 600px;
     flex-direction: column;
     justify-content: space-evenly;
-}
-.user-img{
-    width: 100px;
-    height: 100px;
-}
-.otzv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: rgba(146, 146, 146, 0.322);
-    /* width: 30%; */
-    width: 25rem;
-    padding: 20px;
-
-    border-radius: 10px;
-    
-}
-
-.otzv p{
-    width: 85%;
-}
+} 
 .text-reviews{
-    font-size: 40px;
-    font-family: math;
-    font-weight: 5px;
+    color: white;
+    padding-bottom: 5%;
+}
+.but_buy{
+    border: none;
+    border-top:1px white solid;
+    background:black ;
+    color: white;
+    font-size: 25px;
+    padding: 30px 150px 30px 150px;
+}
+.card{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(58, 58, 58, 0.26);
+    border-radius: 25px;
+}
+.img_foto{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
 }

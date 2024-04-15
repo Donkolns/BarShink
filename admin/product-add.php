@@ -1,24 +1,34 @@
 <?php
 include "../connect.php";
 $Name = isset($_POST['Name'])?$_POST['Name']:false;
-$Categ = isset($_POST['Categ'])?$_POST['Categ']:false;
+
+$Categ = isset($_POST['cat'])?$_POST['cat']:false;
+
 $Price = isset($_POST['Price'])?$_POST['Price']:false;
-$Descr = isset($_POST['Descr'])?$_POST['Descr']:false;
-$Image = isset($_POST['Image'])?$_POST['Image']:false;
 
-function check_error($error) {
-    return "<script>
-    alert('$error'); 
-    location.href = 'Panel-admin2.php';
-    </script>";
-}
-if ($Name and $Categ and $Price and $Descr) {
-    $query = "INSERT INTO `Product` (`Name`, `Category_id`, `Description`, `Price`, `Image`) VALUES ('$Name', '$Categ', '$Descr', '$Price', '$Image')";
-    $result = mysqli_query($con, $query);
-    "<script>alert('Запись создана!');location.href = '/Panel-admin2.php';
-    </script>";
+$Descr = isset($_POST['Desc'])?$_POST['Desc']:false;
 
-} else {
-    echo check_error("Все поля должны быть заполненны!");
+$file = isset($_FILES['image'])?$_FILES['image']:false; 
+
+$take = $_FILES['image']['tmp_name'];
+
+var_dump($take);
+
+$name = $_FILES['image']['name'];
+
+if($Name and $Price and $Categ and $file  and $Descr){
+$result_add = mysqli_query($con, "INSERT INTO  `Product` ( `Name`,`Description`,`Category_id`,`Price`,`Image`)VALUES('$Name','$Descr',$Categ,$Price,'$name')");
+if($result_add){
+    move_uploaded_file($take, '../images/'.$name);
+    echo"<script>alert('Товар создан');
+location.href ='product.php';
+</script>";
 }
+
+}else{
+    echo"<script>alert('не все данные заполненные');
+    location.href ='product.php';
+    </script>";  
+}
+
 ?>
